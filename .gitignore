@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sheraz Khawaja | WAH HOMES</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="tab-nav">
+    <div class="logo">
+      <a href="https://www.wahhomes.ca/" target="_blank">WAH HOMES</a>
+    </div>
+    <ul>
+      <li><button class="tab-btn active" data-tab="about">About</button></li>
+      <li><button class="tab-btn" data-tab="reviews">Reviews</button></li>
+      <li><button class="tab-btn" data-tab="contact">Contact</button></li>
+    </ul>
+  </nav>
+  <main>
+    <!-- About Section -->
+    <section id="about" class="tab-content active">
+      <div class="about-container">
+        <div class="about-text">
+          <h1>Sheraz Khawaja</h1>
+          <h2>Proudly working with <a href="https://www.wahhomes.ca/" target="_blank">WAH HOMES</a></h2>
+          <h3>About me</h3>
+          <p>With over 15 years of experience in sales and marketing, I’ve dedicated my career to helping people make smart, confident decisions in real estate. My work is built on strategy, trust, and a deep understanding of the Canadian market—ensuring you receive the guidance and results you deserve.</p>
+          <p>Whether you’re buying your first home, upgrading to your dream property, investing for long-term growth, or selling with purpose, I offer clear, customized solutions every step of the way.</p>
+          <h4>Why Work With Me?</h4>
+          <ul>
+            <li>✔ 15+ Years of Experience – in sales, marketing, and real estate strategy</li>
+            <li>✔ Deep Market Knowledge – of key regions across Ontario</li>
+            <li>✔ Residential & Investment Expertise – tailored to your goals</li>
+            <li>✔ Strong Negotiation Skills – protecting your interests and boosting ROI</li>
+            <li>✔ Client-First Approach – built on trust, transparency, and lasting relationships</li>
+          </ul>
+          <h4>My Promise to You</h4>
+          <p>Real estate is more than just transactions—it’s about people, life goals, and building a secure future. I take the time to truly understand what matters to you and create a roadmap that makes the journey smooth, successful, and stress-free.</p>
+          <h4>Let’s Talk Real Estate</h4>
+          <p>Whether you’re ready to make a move or just exploring your options, I’d love to hear from you.</p>
+          <button class="consult-btn" onclick="switchTab('contact')">👉 Book a Free Consultation</button>
+        </div>
+        <div class="about-img">
+          <img src="image1.jpg" alt="Sheraz Khawaja portrait" />
+        </div>
+      </div>
+    </section>
+    <!-- Reviews Section -->
+    <section id="reviews" class="tab-content">
+      <h2>Reviews</h2>
+      <div class="review-gallery">
+        <img src="image2.jpg" alt="House 1" />
+        <img src="image3.jpg" alt="House 2" />
+      </div>
+      <div class="reviews-list">
+        <!-- Add your reviews here -->
+        <p><em>Reviews coming soon!</em></p>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="tab-content">
+      <h2>Contact</h2>
+      <form id="contactForm" action="mailto:sheraz_khawaja@yahoo.com" method="POST" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
